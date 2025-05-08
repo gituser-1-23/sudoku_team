@@ -109,7 +109,8 @@ void printBoard(const std::vector<std::vector<int>>& board) {
 }
 
 int main() {
-    std::string filename = "d:\\Users\\10447\\Desktop\\数独.txt";
+    std::string filename = ".\\数独盘.txt";
+    // 这个是我们配在我们下载的文件夹里面的，可以直接使用
     std::vector<std::vector<int>> board = readSudokuFromFile(filename);
     if (board.empty()) {
         return 1;

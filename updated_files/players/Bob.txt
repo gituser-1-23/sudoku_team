@@ -1,0 +1,18 @@
+Name:Bob
+Code:secure123
+SimpleMode:1
+MidMode:1
+HardMode:0
+BestSimple:85
+BestMid:150
+BestHard:1e+06
+Suduko:
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 

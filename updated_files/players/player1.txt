@@ -1,0 +1,18 @@
+Name:player1
+Code:123456
+SimpleMode:1
+MidMode:0
+HardMode:0
+BestSimple:120.5
+BestMid:1e+06
+BestHard:1e+06
+Suduko:
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 

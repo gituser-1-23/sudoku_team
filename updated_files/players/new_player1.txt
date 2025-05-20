@@ -1,0 +1,9 @@
+Name:new_player1
+Code:654321
+SimpleMode:1
+MidMode:0
+HardMode:0
+BestSimple:120.5
+BestMid:1e+06
+BestHard:1e+06
+Suduko:

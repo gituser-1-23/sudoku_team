@@ -1,0 +1,9 @@
+Name:Bob_Updated
+Code:newPassword456
+SimpleMode:1
+MidMode:1
+HardMode:1
+BestSimple:85
+BestMid:150
+BestHard:200
+Suduko:

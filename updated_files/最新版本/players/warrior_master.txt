@@ -1,0 +1,18 @@
+Name:warrior_master
+Code:54321
+SimpleMode:100
+MidMode:50
+HardMode:20
+BestSimple:150
+BestMid:80
+BestHard:40
+Suduko:
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 

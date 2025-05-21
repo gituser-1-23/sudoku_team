@@ -1,0 +1,48 @@
+1.账号管理系统的文件
+这里涉及到player玩家类的定义，这个自己到create_players.h里面看
+然后使用方法是
+    // 2. 使用 PlayerService 类进行操作
+    PlayerService service;
+    std::cout << "\n===== 使用 PlayerService 类 =====" << std::endl;
+    service.show();
+
+    // 登录/注册逻辑
+    string playername, password;
+    cout << "输入玩家姓名:" << endl;
+    cin >> playername;
+    cout << "输入密码:" << endl;
+    cin >> password;
+
+    // 验证登录
+    service.check_and_login(playername,password);
+    Player* player1 = service.getCurrentPlayer();
+    cout << "输入最好成绩(困难):" << endl;
+    double bst;
+    cin >> bst;
+    player1->setBestScore(bst, "hard");
+    service.check_and_logout();
+    // 3. 获取所有玩家信息并排序
+    std::cout << "\n===== 获取所有玩家信息并排序 =====" << std::endl;
+    auto allPlayers = get_the_info();
+
+    for (int i = 0; i < 3; i++)
+    {
+        cout << allPlayers[i] << endl;
+    }
+	return 0;
+}
+catch (const std::exception& e)
+{
+	std::cerr << "\n错误: " << e.what() << std::endl;
+	return 1;
+}
+try-catch语句可以做到我们的程序里面的，这个是自动返回报错信息的功能
+
+主要的，一开启程序就要创建service的实例，这个就是一个所谓的玩家链表的东西
+然后下面的getcurrentPlayer()函数就是返回链表里面的 p->now类似的
+然后这个currentPlayer数据类型是 player*
+所以所有的修改可以根据这个player*上 但是注意这个是指针调用类的函数的使用方法是-> 就像this指针
+
+
+2.音频播放功能
+这个再说，以后可以自己配置

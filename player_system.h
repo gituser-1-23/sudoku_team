@@ -119,10 +119,11 @@ public:
     // 将所有玩家信息保存到文件夹,整个程序退出的时候就必须运行这个
     void save_to_folder(const string& fdp = "./players/")
     {
-        clearPlayerFiles(fdp); // 清除旧文件
+        
 
         // 重新保存所有玩家信息
         playerList = LOAD();
+        clearPlayerFiles(fdp); // 清除旧文件
         for (const auto& info : playerList) {
             Player player(info);
 
@@ -187,6 +188,21 @@ public:
         {
             std::cout << "您尚未登录" << std::endl;
         }
+    }
+    // 快速注册且登陆的方法
+    void quickRegisterAndLogin()
+    {
+        quickRegister();
+        int maxNum = getmax_num("./players/");
+        std::string newPlayerName = "player" + std::to_string(maxNum);
+        std::string defaultCode = "123456"; // 假设默认密码是123456
+
+        if (login(newPlayerName, defaultCode))
+        {
+            std::cout << "欢迎新玩家 " << newPlayerName << " 登录成功！" << std::endl;
+        }
+        else
+            std::cout << "快速注册并登录失败。" << std::endl;
     }
    
 };
